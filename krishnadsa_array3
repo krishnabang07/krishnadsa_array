@@ -1,0 +1,27 @@
+print oddsum& evensum of array?
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[5]={2,3,1,0,6};
+    int even_sum=0;
+    int odd_sum=0;
+    
+    int sum =0;
+    for(int i=0;i<=4;i++)
+    {
+        if(arr[i]%2==0)
+        {
+            even_sum=even_sum+arr[i];
+            
+        }
+        else
+        {
+            odd_sum=odd_sum+arr[i];
+        }
+    }
+    cout<<"even sum:"<<even_sum<<endl;
+    cout<<"odd_sum:"<<odd_sum<<endl;
+    return 0;
+}
