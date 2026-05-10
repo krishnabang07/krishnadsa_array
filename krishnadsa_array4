@@ -1,0 +1,21 @@
+write a program of reversed array?
+#include <iostream>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    int arr[5]={2,3,1,0,6};
+    int i=0,j=4;
+    while(i<j)
+    {
+    swap(arr[i],arr[j]);
+    i++;
+    j--;
+    }
+     cout<<"Reverse array:";
+    for(int k=0;k<5;k++){
+        cout<<arr[k]<<" ";
+    }
+    return 0;
+}
